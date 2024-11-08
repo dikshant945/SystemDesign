@@ -1,0 +1,4 @@
+Program the interfaces
+Remember program application are made for being change
+In This case inheritance will make all the duck fly and interfaces will lead to no code reusablity !
+Encapsulate those things that will vary as seperate and those not encapsulate them as seperate !
