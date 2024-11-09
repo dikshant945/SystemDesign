@@ -1,4 +1,4 @@
-package DuckAppLearning;
+package DuckAppLearning.Clients;
 
 import DuckAppLearning.Interfaces.FlyBehaviour;
 import DuckAppLearning.Interfaces.QuackBehaviour;

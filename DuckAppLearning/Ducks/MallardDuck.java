@@ -2,7 +2,7 @@ package DuckAppLearning.Ducks;
 
 import DuckAppLearning.AbstractClasses.FlyBehaviour.FlyWithWings;
 import DuckAppLearning.AbstractClasses.QuackBehaviour.NoQuacking;
-import DuckAppLearning.Duck;
+import DuckAppLearning.Clients.Duck;
 
 public class MallardDuck extends Duck {
         public MallardDuck() {

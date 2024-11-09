@@ -1,6 +1,6 @@
 package DuckAppLearning.Ducks;
 
-import DuckAppLearning.Duck;
+import DuckAppLearning.Clients.Duck;
 
 public class ModelDuck extends Duck {
 }

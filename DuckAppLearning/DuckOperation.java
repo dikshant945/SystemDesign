@@ -2,9 +2,14 @@ package DuckAppLearning;
 
 import DuckAppLearning.AbstractClasses.FlyBehaviour.NoFly;
 import DuckAppLearning.AbstractClasses.QuackBehaviour.NoQuacking;
+import DuckAppLearning.AbstractClasses.QuackBehaviour.Quack;
+import DuckAppLearning.Clients.Duck;
+import DuckAppLearning.Clients.Hunter;
 import DuckAppLearning.Ducks.MallardDuck;
 import DuckAppLearning.Ducks.ModelDuck;
 import DuckAppLearning.Ducks.TestDuck;
+import DuckAppLearning.Interfaces.FlyBehaviour;
+import DuckAppLearning.Interfaces.QuackBehaviour;
 
 
 public class DuckOperation {
@@ -26,5 +31,10 @@ public class DuckOperation {
         modelDuck.setQuackBehaviour(new NoQuacking());
         modelDuck.peformFly();
         modelDuck.peformQuack();
+
+
+        Hunter hunter = new Hunter();
+        hunter.setQuackBehaviour( new Quack());
+        hunter.fakeQuackToKillDucks();
     }
 }
