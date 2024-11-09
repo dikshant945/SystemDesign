@@ -9,6 +9,7 @@ import DuckAppLearning.Ducks.TestDuck;
 
 public class DuckOperation {
     public static void main(String[] args) {
+        System.out.println("Welcome to the strategy Design Pattern :  Strategy design pattern is a type of pattern that defines a family of algorithm and encapsulate eah ones and  make them interchangable Like here in Duck we have put multiple algorithm like flyBehaviour and QuackBehaviour in them .. and also any client can use these algorithm !");
         Duck mallardDuck = new MallardDuck();
         mallardDuck.peformFly();
         mallardDuck.peformQuack();
