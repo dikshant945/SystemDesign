@@ -3,6 +3,7 @@ package WeatherStationApp.Observers;
 import WeatherStationApp.Interfaces.Display;
 import WeatherStationApp.Interfaces.Observer;
 import WeatherStationApp.Interfaces.Subject;
+import WeatherStationApp.Subjects.WeatherData;
 
 public class ForecastDisplay implements Display, Observer {
 
@@ -10,9 +11,9 @@ public class ForecastDisplay implements Display, Observer {
     private float humidity;
     private float pressure;
 
-    private Subject weatherData;
+    private WeatherData weatherData;
 
-    public ForecastDisplay(Subject weatherData) {
+    public ForecastDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
@@ -20,15 +21,14 @@ public class ForecastDisplay implements Display, Observer {
 
     @Override
     public void display() {
-        System.out.println("Forecast Display Display "+ this.temperature + " " + this.humidity + " " + this.pressure);
+        System.out.println("Forecast Display Display "+ this.temperature + " " + this.humidity);
     }
 
 
     @Override
-    public void update(float temp, float humidity, float pressure) {
-        this.temperature = temp;
-        this.humidity = humidity;
-        this.pressure = pressure;
+    public void update() {
+        this.temperature = weatherData.getTemperature();
+        this.humidity = weatherData.getHumidity();
         display();
     }
 }

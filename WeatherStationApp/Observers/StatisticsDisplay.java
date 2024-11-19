@@ -2,14 +2,14 @@ package WeatherStationApp.Observers;
 
 import WeatherStationApp.Interfaces.Display;
 import WeatherStationApp.Interfaces.Observer;
-import WeatherStationApp.Interfaces.Subject;
+import WeatherStationApp.Subjects.WeatherData;
 
 public class StatisticsDisplay implements Display, Observer {
     private float temperature;
     private float humidity;
-    private Subject weatherData;
+    private WeatherData weatherData;
 
-    public StatisticsDisplay(Subject weatherData) {
+    public StatisticsDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
@@ -22,10 +22,9 @@ public class StatisticsDisplay implements Display, Observer {
 
 
     @Override
-    public void update(float temp, float humidity, float pressure) {
-       this.temperature = temp;
-       this.humidity = humidity;
-
+    public void update() {
+       this.temperature = weatherData.getTemperature();
+       this.humidity = weatherData.getHumidity();
        display();
     }
 }
