@@ -1,0 +1,21 @@
+package DecoratorsPatternWithStarbuzzCafe.Condiments;
+
+import DecoratorsPatternWithStarbuzzCafe.AbstractClasses.Beverage;
+import DecoratorsPatternWithStarbuzzCafe.AbstractClasses.CondimentDecorator;
+
+public class Soy extends CondimentDecorator {
+
+    public Soy(Beverage b){
+        beverage = b;
+    }
+
+    @Override
+    public String getDescription() {
+        return beverage.description + " Soy";
+    }
+
+    @Override
+    public double cost() {
+        return beverage.cost() + 0.15;
+    }
+}

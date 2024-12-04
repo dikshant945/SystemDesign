@@ -6,10 +6,12 @@
       <list>
         <option value="$PROJECT_DIR$/WeatherStation/pom.xml" />
         <option value="$PROJECT_DIR$/WeatherStationApp/pom.xml" />
+        <option value="$PROJECT_DIR$/DecoratorPatternStabuzzCafe/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/DecoratorPatternStabuzzCafe/pom.xml" />
         <option value="$PROJECT_DIR$/WeatherStation/pom.xml" />
         <option value="$PROJECT_DIR$/WeatherStationApp/pom.xml" />
       </set>
