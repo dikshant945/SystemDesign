@@ -9,6 +9,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="DecoratorPatternStabuzzCafe" target="23" />
       <module name="WeatherStation" target="23" />
       <module name="WeatherStationApp" target="23" />
     </bytecodeTargetLevel>
