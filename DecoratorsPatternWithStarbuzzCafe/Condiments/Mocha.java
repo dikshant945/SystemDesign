@@ -11,7 +11,7 @@ public class Mocha extends CondimentDecorator {
 
     @Override
     public String getDescription() {
-        return beverage.description + " Mocha";
+        return beverage.getDescription() + " Mocha";
     }
 
     @Override
