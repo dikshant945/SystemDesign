@@ -23,7 +23,7 @@ public class StarBuzzCoffee {
         double cost = darkRoast.cost();
         String description = darkRoast.getDescription();
 
-        System.out.println(description + " " + cost);
+        System.out.println(description + " " + cost );
 
     }
 }
