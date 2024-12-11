@@ -7,9 +7,6 @@ import DecoratorsPatternWithStarbuzzCafe.Condiments.Soy;
 import DecoratorsPatternWithStarbuzzCafe.Condiments.SteamedMilk;
 import DecoratorsPatternWithStarbuzzCafe.Condiments.Whip;
 
-import java.util.HashMap;
-import java.util.Scanner;
-
 public class StarBuzzCoffee {
     public static void main(String[] args) {
         Beverage darkRoast = new DarkRoast();
