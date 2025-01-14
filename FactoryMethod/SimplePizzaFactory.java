@@ -4,16 +4,16 @@ import FactoryMethod.PizzaType.CheesePizza;
 import FactoryMethod.PizzaType.PepperoniPizza;
 import FactoryMethod.PizzaType.VeggiePizza;
 
-public class PizzaFactory {
-    Pizza pizza;
-
-    public  PizzaFactory(String pizza){
+public class SimplePizzaFactory {
+    public Pizza createPizza(String type){
+        Pizza pizza = null;
         if(pizza.equals("Cheese")) {
-            this.pizza = new CheesePizza();
+            pizza = new CheesePizza();
         }else if(pizza.equals("Veggie")){
-            this.pizza = new VeggiePizza();
+            pizza = new VeggiePizza();
         }else{
-            this.pizza = new PepperoniPizza();
+            pizza = new PepperoniPizza();
         }
+        return pizza;
     }
 }
