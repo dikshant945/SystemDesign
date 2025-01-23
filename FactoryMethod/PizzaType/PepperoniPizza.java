@@ -2,7 +2,7 @@ package FactoryMethod.PizzaType;
 
 import FactoryMethod.Pizza;
 
-public class PepperoniPizza implements Pizza {
+public class PepperoniPizza extends Pizza {
     @Override
     public void prepare() {
         System.out.println("PepperoniPizza Pizza Prepared !");

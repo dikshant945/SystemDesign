@@ -4,18 +4,16 @@ import FactoryMethod.Pizza;
 import FactoryMethod.SimplePizzaFactory;
 
 public abstract class PizzaStore {
-    SimplePizzaFactory factory;
 
-
-    protected abstract Pizza createPizza(String type);
-
+    abstract Pizza createPizza(String item);
 
     public Pizza orderPizza(String type) {
-        Pizza pizza = factory.createPizza(type);
-        pizza.bake();
-        pizza.box();
-        pizza.cut();
+        Pizza pizza = createPizza(type);
+        System.out.println("--- Making a " + pizza.getName() + " ---");
         pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
         return pizza;
     }
 }

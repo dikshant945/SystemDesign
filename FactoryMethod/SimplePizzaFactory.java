@@ -7,9 +7,9 @@ import FactoryMethod.PizzaType.VeggiePizza;
 public class SimplePizzaFactory {
     public Pizza createPizza(String type){
         Pizza pizza = null;
-        if(pizza.equals("Cheese")) {
+        if(type.equals("Cheese")) {
             pizza = new CheesePizza();
-        }else if(pizza.equals("Veggie")){
+        }else if(type.equals("Veggie")){
             pizza = new VeggiePizza();
         }else{
             pizza = new PepperoniPizza();
