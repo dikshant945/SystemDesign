@@ -1,0 +1,12 @@
+package CommandPattern.Commands.NoCommand;
+
+import CommandPattern.Interfaces.Command;
+
+// Command
+public class NoCommand implements Command {
+
+    @Override
+    public void execute() {
+        System.out.println("No Coomand is Present");
+    }
+}
