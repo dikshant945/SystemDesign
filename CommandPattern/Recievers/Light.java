@@ -1,12 +1,16 @@
 package CommandPattern.Recievers;
 
+import java.util.List;
+
 // order
 public class Light {
 
     private Light light;
 
-    public void Light(Light l) {
-        this.light = l;
+    private String description;
+
+    public Light (String  descirption) {
+        this.description = description;
     }
 
     public void turnOn() {
@@ -15,5 +19,12 @@ public class Light {
 
     public void turnOff() {
         System.out.println("Light is turnedOf !");
+    }
+
+    @Override
+    public String toString() {
+        return "Light{" +
+                "description='" + description + '\'' +
+                '}';
     }
 }
