@@ -29,3 +29,5 @@ Thumbs.db
 
 # TruffleHog
 trufflehog/
+
+/out/production/SystemDesign/.idea/leetcode/statistics.xml
